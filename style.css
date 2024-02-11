@@ -1,4 +1,49 @@
-h1 {
-    background: black;
-    color: white;
+body {
+    background-color: #1a202e;
+    height: 3000px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #10131A;
+    color: #EFF0F2;
+    padding-right: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.middle-section li{
+    margin-right: 50px;
+}
+
+.middle-section a{
+    text-decoration: none;
+    color: #EFF0F2;
+    transition: text-decoration 0.2s;
+}
+
+.middle-section a:hover{
+    text-decoration: underline;
+}
+
+.contact-btn{
+    background-color: rgb(6, 140, 184);
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #EFF0F2;
+    cursor: pointer;
 }
