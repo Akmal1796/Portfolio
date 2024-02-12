@@ -21,20 +21,39 @@ nav {
     height: 100px;
     font-size: 20px;
     align-items: center;
+    z-index: 1;
 }
 
 .middle-section li{
     margin-right: 50px;
 }
 
-.middle-section a{
+.navlinks{
+    position: relative;
     text-decoration: none;
     color: #EFF0F2;
-    transition: text-decoration 0.2s;
+    text-decoration: none;
 }
 
-.middle-section a:hover{
-    text-decoration: underline;
+.navlinks:hover{
+    color: #EFF0F2;
+}
+
+.navlinks::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EFF0F2;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.navlinks:hover::before {
+    transform: scaleX(1);
 }
 
 .contact-btn{
@@ -46,4 +65,70 @@ nav {
     font-size: 15px;
     color: #EFF0F2;
     cursor: pointer;
+}
+
+.container {
+    margin-top: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to left, rgb(3, 51, 67), rgb(0, 0, 0));
+    color: #EFF0F2;
+    z-index: -1;
+}
+
+.container h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.container p {
+    font-size: 18px;
+    color: lightgray;
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discription {
+    margin-left: 100px;
+    width: 700px;
+}
+
+.developer {
+    color:  rgb(19, 196, 255);
+}
+
+.hire-btn {
+    background-color: rgb(6, 140, 184);
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #EFF0F2;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.play-video-btn {
+    background-color: transparent;
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: 1px solid rgb(11, 179, 234);
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(67, 208, 255);
+    cursor: pointer;
+}
+
+.image {
+    margin-right: 60px;
+    filter: grayscale(20%);
+    filter: brightness(90%);
 }
