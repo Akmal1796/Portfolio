@@ -3,6 +3,12 @@ body {
     height: 3000px;
 }
 
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -30,7 +36,6 @@ nav {
 
 .navlinks{
     position: relative;
-    text-decoration: none;
     color: #EFF0F2;
     text-decoration: none;
 }
@@ -62,28 +67,105 @@ nav {
     border-radius: 30px;
     border: none;
     font-weight: bold;
+    text-decoration: none;
     font-size: 15px;
+    margin-left: 250px;
     color: #EFF0F2;
     cursor: pointer;
 }
 
-.container {
+.sidebar {
+    position: fixed;
+    top: -20px;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: rgba(23, 58, 73, 0.549);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menue-btn {
+    position: fixed;
+    right: 0;
+    top: 10px;
+    display: none;
+}
+
+@media (max-width: 750px) {
+
+    .logo {
+        width: 25px;
+        height: 25px;
+    }
+
+     nav {
+        height: 50px;
+    }
+
+    .hideOnMObile {
+      display: none;  
+    }
+
+    .menue-btn {
+        display: block;
+    }
+
+    .contact-btn {
+        padding: 15px 20px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 1079px) and (min-width: 750px) {
+
+    nav {
+        font-size: 17px;
+    }
+
+    .middle-section li{
+        margin-right: 20px;
+    }
+    
+    .contact-btn{
+        padding: 20px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 100px;
+        margin-right: 0;
+    }
+}
+
+.hero-container {
     margin-top: 80px;
     position: absolute;
     left: 0;
     right: 0;
     background-image: linear-gradient(to left, rgb(3, 51, 67), rgb(0, 0, 0));
     color: #EFF0F2;
-    z-index: -1;
 }
 
-.container h1 {
+.hero-container h1 {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 30px;
 }
 
-.container p {
+.hero-container p {
     font-size: 18px;
     color: lightgray;
     margin-bottom: 30px;
@@ -109,11 +191,17 @@ nav {
     padding: 15px 50px;
     border-radius: 30px;
     border: none;
+    text-decoration: none;
     font-weight: bold;
     font-size: 15px;
     color: #EFF0F2;
     margin-right: 25px;
+    transition: background-image 0.5s;
     cursor: pointer;
+}
+
+.hire-btn:hover {
+    background-image: linear-gradient(rgb(6, 140, 184), rgb(56, 193, 239));
 }
 
 .play-video-btn {
@@ -121,14 +209,104 @@ nav {
     padding: 15px 50px;
     border-radius: 30px;
     border: 1px solid rgb(11, 179, 234);
+    text-decoration: none;
     font-weight: bold;
     font-size: 15px;
     color: rgb(67, 208, 255);
+    transition: background-image 0.5s;
     cursor: pointer;
+}
+
+.play-video-btn:hover {
+    border: 2px solid rgb(76, 204, 247);
 }
 
 .image {
     margin-right: 60px;
     filter: grayscale(20%);
     filter: brightness(90%);
+}
+
+@media (max-width: 750px) {
+
+    .hero-container {
+        margin-top: 40px;
+        padding-bottom: 50px;
+        padding-top: 25px;
+    }
+
+    .hero-container h1 {
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .hero-container p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .discription {
+        margin-left: 25px;
+    }
+
+    .hire-btn {
+        padding: 3px 10px;
+        font-size: 13px;
+        margin-right: 6px;
+    }
+
+    .play-video-btn {
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1079px) and (min-width: 750px) {
+
+    .hero-container {
+        margin-top: 60px;
+        padding-bottom: 50px;
+        padding-top: 25px;
+    }
+
+    .hero-container h1 {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
+
+    .hero-container p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .discription {
+        margin-left: 25px;
+    }
+
+    .hire-btn {
+        padding: 3px 10px;
+        font-size: 13px;
+        margin-right: 6px;
+    }
+
+    .play-video-btn {
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+
+    .image {
+        width: 300px;
+        height: 350px;
+        margin-left: 30px;
+        margin-right: 60px;
+    }
 }
