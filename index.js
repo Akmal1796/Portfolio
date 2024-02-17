@@ -64,3 +64,86 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial setup to show the first 5 projects
     toggleProjects();
 });
+
+const feedbackContainer = document.querySelector('.feddback-container');
+const feedbackBox = document.querySelector('.feddback-message-container');
+const arrowBtns = document.querySelectorAll('.feddback-container i');
+const firstCardWidth = feedbackBox.querySelector(".feedback").offsetWidth;
+const feedbackChildren = [...feedbackBox.children];
+
+let isDragging = false, startX, startScrollLeft, timeoutId;
+
+//Get the number of cards that can fit the feedbackBox at once
+let cardPerView = Math.round(feedbackBox.offsetWidth / firstCardWidth);
+
+// Insert copies of the last few cards to beginning of the feedbackBox for infinite scrolling
+feedbackChildren.slice(-cardPerView).reverse().forEach(card => {
+    feedbackBox.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+
+// Insert copies of the first few cards to end of the feedbackBox for infinite scrolling
+feedbackChildren.slice(0, cardPerView).forEach(card => {
+    feedbackBox.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+
+//Add event listeners for the arrow button to scroll the feedbackBox left and right
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        feedbackBox.scrollLeft += btn.id === "left" ? - firstCardWidth : firstCardWidth;
+    });
+});
+
+const dragStart = (e) => {
+    isDragging = true;
+    feedbackBox.classList.add("dragging");
+    //record the initial cursor and scroll position of the feedbackBox
+    startX = e.pageX;
+    startScrollLeft = feedbackBox.scrollLeft;
+}
+
+const dragging = (e) => {
+    if(!isDragging) return //if isDragging is false return from here
+    //Updates the scroll position of the feedbackBox based on the cursor movement
+    feedbackBox.scrollLeft = startScrollLeft-(e.pageX - startX);
+}
+
+const draggStop = () => {
+    isDragging = false;
+    feedbackBox.classList.remove("dragging");
+}
+
+const autoPlay = () =>  {
+    if(window.innerWidth < 800) return; //Return if window is smaller than 800
+    // Autoplay the feedbckBox after every 2.5 s
+    timeoutId = setTimeout(() => feedbackBox.scrollLeft += firstCardWidth, 2500);
+}
+
+autoPlay();
+
+const infiniteScroll = () => {
+    //If the feedbackBox is at the beginning, scroll to the end
+    if(feedbackBox.scrollLeft === 0) {
+        feedbackBox.classList.add("no-transition");
+        feedbackBox.scrollLeft = feedbackBox.scrollWidth - (2 * feedbackBox.offsetWidth);
+        feedbackBox.classList.remove("no-transition");
+    }
+    // If the feedbackBox is at the end, scroll to the beginning
+    else if(Math.ceil(feedbackBox.scrollLeft) === feedbackBox.scrollWidth - feedbackBox.offsetWidth) {
+        feedbackBox.classList.add("no-transition");
+        feedbackBox.scrollLeft = feedbackBox.offsetWidth;
+        feedbackBox.classList.remove("no-transition");
+    }
+
+    //Clear existing timeout & start autoplay if mouse is not hovering over feedbackBox
+    clearTimeout(timeoutId);
+    if(feedbackContainer.matches(":hover")) autoPlay();
+
+}
+
+feedbackBox.addEventListener("mousedown", dragStart);
+feedbackBox.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", draggStop);
+feedbackBox.addEventListener("scroll", infiniteScroll);
+feedbackContainer.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+feedbackContainer.addEventListener("mouseleave", autoPlay);
