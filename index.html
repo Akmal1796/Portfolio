@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+                                <!-- page styles -->
     <link rel="stylesheet" href="Home-Page-Styles/general-style.css">
     <link rel="stylesheet" href="Home-Page-Styles/nav-styles.css">
     <link rel="stylesheet" href="Home-Page-Styles/hero-section-styles.css">
@@ -13,16 +14,19 @@
     <link rel="stylesheet" href="Home-Page-Styles/article-section-styles.css">
     <link rel="stylesheet" href="Home-Page-Styles/feedback-section-styles.css">
     <link rel="stylesheet" href="Home-Page-Styles/footer-section-styles.css">
+
+                                <!-- icons -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav class="nav">        
         <ul class="sidebar">
             <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#" class="navlinks" class="active">Portfolio</a></li>
-            <li><a href="#" class="navlinks">About Me</a></li>
-            <li><a href="#" class="navlinks">My Blog</a></li>
-            <li><a href="#" class="navlinks">Reviews</a></li>
+            <li><a href="#" class="navlinks active">Portfolio</a></li>
+            <li><a href="about.html" class="navlinks">About Me</a></li>
+            <li><a href="blog.html" class="navlinks">My Blog</a></li>
+            <li><a href="reviews.html" class="navlinks">Reviews</a></li>
             <li><a href="#" class="contact-btn">Contact Me</a></li>
         </ul>
         <div>
@@ -30,9 +34,9 @@
         </div>
         <ul class="middle-section">
             <li><a href="#" class="hideOnMObile active">Portfolio</a></li>
-            <li><a href="#" class="navlinks hideOnMObile">About Me</a></li>
-            <li><a href="#" class="navlinks hideOnMObile">My Blog</a></li>
-            <li><a href="#" class="navlinks hideOnMObile">Reviews</a></li>
+            <li><a href="about.html" class="navlinks hideOnMObile">About Me</a></li>
+            <li><a href="blog.html" class="navlinks hideOnMObile">My Blog</a></li>
+            <li><a href="reviews.html" class="navlinks hideOnMObile">Reviews</a></li>
             <li><a href="#" class="contact-btn hideOnMObile">Contact Me</a></li>
             <li class="menue-btn" onclick= "showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+                                    <!-- page styles -->
+    <link rel="stylesheet" href="Home-Page-Styles/general-style.css">
+    <link rel="stylesheet" href="Home-Page-Styles/nav-styles.css">
+    <link rel="stylesheet" href="Home-Page-Styles/hero-section-styles.css">
+    <link rel="stylesheet" href="Home-Page-Styles/footer-section-styles.css">
+
+                                    <!-- icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">        
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html" class="navlinks">Portfolio</a></li>
+            <li><a href="about.html" class="navlinks">About Me</a></li>
+            <li><a href="blog.html" class="navlinks">My Blog</a></li>
+            <li><a href="#" class="navlinks active">Reviews</a></li>
+            <li><a href="#" class="contact-btn">Contact Me</a></li>
+        </ul>
+        <div>
+            <img src="Logo/logo.png" class="logo">
+        </div>
+        <ul class="middle-section">
+            <li><a href="index.html" class="navlinks hideOnMObile">Portfolio</a></li>
+            <li><a href="about.html" class="navlinks hideOnMObile">About Me</a></li>
+            <li><a href="blog.html" class="navlinks hideOnMObile">My Blog</a></li>
+            <li><a href="#" class="hideOnMObile active">Reviews</a></li>
+            <li><a href="#" class="contact-btn hideOnMObile">Contact Me</a></li>
+            <li class="menue-btn" onclick= "showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <div class="hero-container">
+        </div>
+        
+        <div class="footer-section">
+            <div class="footer-content">
+                <div class="left-footer-section">
+                    <img src="Logo/logo.png" class="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis minima, quae reiciendis quasi consequatur officiis inventore debitis omnis libero ex dolore incidunt. Facere commodi, impedit cupiditate aliquid pariatur reiciendis ea!</p>
+                    <h3>Address</h3>
+                    <p class="address-paragraph"> No.01, St Name,<br>
+                        City</p>
+                    <div class="social-media-links">
+                        <div>
+                            <h4>Follow Me On</h4>
+                            <a href="https://x.com/Akmal_official_?t=jVZTUPqgKStUu-fO6PsTkQ&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/mhd_akmal_17?utm_source=qr&igsh=emYxdTJneWZrMXBj" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/mohamad.akmal.1614?sfnsn=wa&mibextid=RUbZ1f" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.threads.net/@mhd_akmal_17" target="_blank"><i class="fa-brands fa-threads"></i><br></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                            <a href="https://telegram.org/dl" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://discord.com/invite/PfvfJvbV" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        </div>
+                        <div>
+                            <h4>To Know More</h4>
+                            <a href="https://youtube.com/@programmingacademy4699?feature=shared" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://stackoverflow.com/users/20191382/mohamed-akmal" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                            <a href="https://github.com/Akmal1796" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mohamed-akmal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.upwork.com" target="_blank"><i class="fa-brands fa-upwork"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-footer-section">
+                    <h3>Categories</h3>
+                    <div class="category-container">
+                        <ul>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Contact Me</a></li>
+                            <li><a href="#">My Blog</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">My Projects</a></li>
+                            <li><a href="#">My Articles</a></li>
+                            <li><a href="#">Achievments</a></li>
+                            <li><a href="#">My Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dicta maiores nesciunt veritatis velit.</p>
+                    <div class="newsletter-form">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </div>
+
+            <div>
+                <p class="copyright-section">
+                    All Right Resereved &copy 2024
+                </p>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="Scripts/index.js"></script>
+</body>
+</html>
