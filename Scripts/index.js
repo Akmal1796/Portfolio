@@ -1,4 +1,4 @@
-//Enable hidden nav bar
+                                                            /* Enable hidden nav bar */
 {
     const nav = document.querySelector(".nav");
     let lastScrollY = window.scrollY;
@@ -15,7 +15,7 @@
     });
 }
 
-/* console.log("Hello World!"); */
+                                                            /*  hide/show navbar */
 
 const sidebar = document.querySelector('.sidebar');
 
@@ -27,20 +27,7 @@ function hideSidebar() {
     sidebar.style.display = 'none';
 }
 
-/* 
-let projectsPreview = document.querySelector('.projects-preview');
-
-let seemoreBTN = document.querySelector('.seemore-btn'); */
-
-/* document.querySelector('.seemore-btn').addEventListener('click', function() {
-    let hiddenProject = document.querySelectorAll('.hidden');
-
-    hiddenProject.forEach(element => {
-        element.classList.remove('hidden');
-    });
-    
-    document.querySelector('.seemore-btn').innerHTML = 'See Less';
-}) */
+                                                            /* hide/show projects */
 
 document.addEventListener('DOMContentLoaded', function () {
     const hiddenProjects = document.querySelectorAll('.projects-preview .project');
@@ -81,6 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial setup to show the first 5 projects
     toggleProjects();
 });
+
+                                                            /* Infinite slider for review messages */
 
 const feedbackContainer = document.querySelector('.feddback-container');
 const feedbackBox = document.querySelector('.feddback-message-container');

@@ -1,0 +1,12 @@
+
+body {
+    background-color: #1a202e;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
