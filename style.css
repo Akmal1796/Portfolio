@@ -27,14 +27,30 @@ nav {
     background-color: #10131A;
     color: #EFF0F2;
     padding-right: 30px;
+    height: 100px;/* 
+    padding-top: var(--nav-height - 50px); */
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    height: 100px;
     font-size: 20px;
     align-items: center;
     z-index: 1;
+    transition: transform 0.3s;
+}
+
+.nav--hidden {
+    transform: translateY(-100px);
+}
+
+nav .active {
+    background-color: #EFF0F2;
+    color: #1a202e;
+    font-weight: bold;
+    padding: 17px;
+    border-radius: 10px;
+    position: relative;
+    text-decoration: none;
 }
 
 .middle-section li{
