@@ -15,7 +15,7 @@
     });
 }
 
-console.log("Hello World!");
+/* console.log("Hello World!"); */
 
 const sidebar = document.querySelector('.sidebar');
 
