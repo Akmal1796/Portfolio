@@ -83,7 +83,6 @@
 
     .hero-container {
         margin-top: 40px;
-        padding-bottom: 50px;
         padding-top: 25px;
     }
 
@@ -103,13 +102,13 @@
     }
 
     .hire-btn {
-        padding: 3px 10px;
+        padding: 6px 15px;
         font-size: 13px;
         margin-right: 6px;
     }
 
     .play-video-btn {
-        padding: 3px 10px;
+        padding: 6px 15px;
         font-size: 13px;
     }
 
@@ -125,7 +124,6 @@
 
     .hero-container {
         margin-top: 60px;
-        padding-bottom: 50px;
         padding-top: 25px;
     }
 
