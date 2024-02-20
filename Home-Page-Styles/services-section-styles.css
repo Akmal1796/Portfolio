@@ -85,7 +85,7 @@
 @media (max-width: 750px) {
 
     .services-discription {
-        margin-top: 0;
+        margin-top: 25px;
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -116,27 +116,28 @@
     
     .service-box {
         display: flex;
-        margin-left: 35px;
     }
 
     .service-name {
-        width: 200px;
-        height: 200px;
-        margin-right: auto;
+        width: 140px;
+        height: 220px;
+        margin-right: 0;
+        margin-left: 20px;
         flex-direction: column;
     }
 
     .service-img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .service-name h2 {
-        font-size: 16px;
+        font-size: 14px;
+        text-align: center;
     }
 
     .services-paragraph {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .tier-two-service {

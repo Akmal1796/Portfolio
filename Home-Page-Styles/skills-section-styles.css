@@ -132,3 +132,48 @@
         width: 40%;
     }
 }
+
+@media (max-width: 750px) {
+    
+    .skill-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    .skill-discription h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .skill-discription h2 {
+        font-size: 16px;
+    }
+
+    .skill-discription h3 {
+        font-size: 14px;
+    }
+
+    .skill-discription p {
+        color: lightgray;
+        font-size: 13px;
+    }
+
+    .skill-discription {
+        margin-left: 60px;
+    }
+
+    .progress-bar {
+        margin-left: 60px;
+    }
+
+    .progress-bar h1 {
+        font-size: 22px;
+        margin-left: 90px;
+    }
+
+    .skill_bar p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+}

@@ -87,3 +87,26 @@
     margin-top: 4px;
     margin-bottom: 2px;
 }
+
+@media (max-width: 750px) {
+
+    .article-discription {
+        text-align: center;
+    }
+    
+    .article-discription h1 {
+        font-size: 22px;
+    }
+    
+    .article-discription span {
+        color:  rgb(19, 196, 255);
+    }
+    
+    .article-discription p {
+        color: lightgray;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+        margin-top: 0;
+    }
+}

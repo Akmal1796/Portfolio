@@ -1,4 +1,7 @@
-
+.footer-logo {
+    width: 120px;
+    height: 120px;
+}
 
 .footer-section {
     display: flex;
@@ -132,5 +135,26 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 0;
+    }
+
+    .footer-discription {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-discription p {
+        width: 260px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-left: -35px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .right-footer-section p {
+        width: 250px;
     }
 }

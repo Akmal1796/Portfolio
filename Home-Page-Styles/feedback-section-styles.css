@@ -137,3 +137,18 @@
     margin-top: 15px;
     color: rgb(199, 197, 197);
 }
+
+@media (max-width: 750px) {
+    
+    .feedback-discription h1 {
+        font-size: 22px;
+    }
+    
+    .feedback-discription p {
+        color: lightgray;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+        margin-top: 0;
+    }
+}
