@@ -81,3 +81,65 @@
     width: 130px;
     height: 130px;
 }
+
+@media (max-width: 750px) {
+
+    .services-discription {
+        margin-top: 0;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .services-discription h1 {
+        font-size: 22px;
+    }
+    
+    .service-span {
+        color:  rgb(19, 196, 255);
+    }
+    
+    .services-discription p {
+        color: lightgray;
+        font-size: 14px;
+    }
+    
+    .read-more-btn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }   
+    
+    .service-box {
+        display: flex;
+        margin-left: 35px;
+    }
+
+    .service-name {
+        width: 200px;
+        height: 200px;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    .service-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .service-name h2 {
+        font-size: 16px;
+    }
+
+    .services-paragraph {
+        font-size: 13px;
+    }
+
+    .tier-two-service {
+        margin-top: 30px;
+    }
+}
