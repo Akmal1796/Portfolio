@@ -151,4 +151,41 @@
         text-align: center;
         margin-top: 0;
     }
+
+    .feddback-container {
+        width: 95%;
+    }
+    
+    .feedback {
+        width: 260px;
+        padding: 15px 65px;
+    }
+    
+    .feedback-header {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+    }
+    
+    .feedback-header h3 {
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    
+    .feedback-message h3,h5 {
+        font-size: 12px;
+    }
+    
+    .feedback-profile {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .rating-img {
+        margin-left: 10px;
+    }
+    
+    .feedback-message {
+        font-size: 11px;
+    }
 }
