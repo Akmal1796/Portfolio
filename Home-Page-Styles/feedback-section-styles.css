@@ -155,6 +155,21 @@
     .feddback-container {
         width: 95%;
     }
+
+    .feddback-container i {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    
+    .feddback-container i:first-child {
+        left: -12px;
+    }
+    
+    .feddback-container i:last-child {
+        right: 2px;
+    }
     
     .feedback {
         width: 260px;

@@ -126,6 +126,7 @@
         flex-direction: column;
         overflow: scroll;
         scrollbar-width: none;
+        padding-bottom: 10px;
     }
 
     .service-img {
