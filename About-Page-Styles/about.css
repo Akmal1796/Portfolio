@@ -149,13 +149,18 @@ ul li .date {
 }
 
 @media screen and (max-width: 993px) {
+    
+    .hero-container {
+        margin-left: -50px;
+    }
+
     .container {
         width: 80%;
         transform: translateX(15px);
     }
 
     .container ul::after {
-        left: -30px;
+        left: 10px;
     }
 
     .container ul li {
