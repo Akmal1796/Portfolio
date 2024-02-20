@@ -125,3 +125,12 @@
 .copyright-section {
     color: white;
 }
+
+@media (max-width: 750px) {
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+}
