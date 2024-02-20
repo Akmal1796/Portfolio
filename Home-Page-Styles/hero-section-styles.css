@@ -67,6 +67,10 @@
     border: 2px solid rgb(76, 204, 247);
 }
 
+.hero-container-links {
+    margin-top: 40px;
+}
+
 .hero-container-links a {
     font-size: 30px;
     color: white;
@@ -120,6 +124,10 @@
         margin-right: 20px;
     }
 
+    .hero-container-links {
+        margin-top: 0;
+    }
+
     .hero-container-links i {
         font-size: 14px;
     }
@@ -169,6 +177,10 @@
         height: 350px;
         margin-left: 30px;
         margin-right: 60px;
+    }
+
+    .hero-container-links {
+        margin-top: 0;
     }
     
     .hero-container-links i {
