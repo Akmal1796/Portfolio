@@ -105,7 +105,6 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-    text-align: center;
     opacity: 0;
     transition: opacity 0.5s;
 }
@@ -117,13 +116,15 @@
 .project-details h2 {
     color: white;
     margin-top: 2px;
+    text-align: center;
     margin-bottom: 0;
 }
 
 .project-details p{
-    font-size: 15px;
+    font-size: 17px;
     color: #EFF0F2;
     margin-top: 4px;
+    text-align: center;
     margin-bottom: 2px;
 }
 

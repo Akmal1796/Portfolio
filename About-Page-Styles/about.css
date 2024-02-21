@@ -13,6 +13,7 @@
 .hero-container h1 {
     color: white;
     text-align: center;
+    font-size: 30px;
 }
 
 .about-me-contents {
@@ -31,11 +32,13 @@
 
 .about-discription p {
     color: lightgray;
+    font-size: 17px;
 }
 
 .about-discription-right p {
     color: lightgray;
     text-align: center;
+    font-size: 17px;
 }
 
 .skills-icons {
