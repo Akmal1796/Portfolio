@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: pop;
-    src: url(./fonts/Poppins-Medium.ttf);
-}
-
 .nav {
     z-index: 999;
 }
@@ -15,13 +10,69 @@
     background-color: #1a202e;
 }
 
+.hero-container h1 {
+    color: white;
+    text-align: center;
+}
+
+.about-me-contents {
+    margin-top: 80px;
+    background-image: linear-gradient(to left, rgb(3, 51, 67), rgb(0, 0, 0));
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+    padding: 50px;
+}
+
+.about-discription {
+    margin-left: 50px;
+}
+
+.about-discription p {
+    color: lightgray;
+}
+
+.about-discription-right p {
+    color: lightgray;
+    text-align: center;
+}
+
+.skills-icons {
+    font-size: 40px;
+    text-align: center;
+}
+
+.skills-icons i {
+    margin-right: 15px;
+}
+
+.profissional-links {
+    font-size: 40px;
+    text-align: center;
+}
+
+.profissional-links i {
+    margin-right: 15px;
+}
+
+.profissional-links a {
+    color: white;
+}
+
 .main {
     width: 100%;
     height: auto;
-    font-family: pop;
     padding: 50px 0;
     display: grid;
     place-items: center;
+    margin-top: 50px;
+}
+
+.main h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
 }
 
 .container {
@@ -92,20 +143,20 @@
     color:  rgb(77, 211, 255);
 }
 
-ul li p {
+.container ul li p {
     font-size: 15px;
-    color: #444;
+    color: #f7f7f7;
     margin: 7px 0;
     line-height: 23px;
 }
 
-ul li a {
+.container ul li a {
     font-size: 15px;
     color:  rgb(77, 211, 255);
     text-decoration: none;
 }
 
-ul li .date {
+.container ul li .date {
     position: absolute;
     top: -45px;
     width: 135px;
@@ -156,6 +207,38 @@ ul li .date {
 }
 
 @media screen and (max-width: 993px) {
+
+    .main h1 {
+        font-size: 20px;
+    }
+
+    .about-me-contents {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    .about-discription {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .skills-icons {
+        font-size: 20px;
+    }
+    
+    .skills-icons i {
+        margin-right: 10px;
+    }
+
+    .profissional-links {
+        font-size: 20px;
+    }
+    
+    .profissional-links i {
+        margin-right: 10px;
+    }
     
     .hero-container {
         margin-left: -50px;
