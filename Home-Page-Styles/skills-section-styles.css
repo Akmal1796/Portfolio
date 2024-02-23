@@ -139,6 +139,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 0;
+        padding-bottom: 40px;
     }
     
     .skill-discription h1 {
@@ -174,6 +175,51 @@
 
     .skill_bar p {
         font-size: 13px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 750px) {
+    
+    .skill-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 60px;
+    }
+    
+    .skill-discription h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .skill-discription h2 {
+        font-size: 19px;
+    }
+
+    .skill-discription h3 {
+        font-size: 17px;
+    }
+
+    .skill-discription p {
+        font-size: 16px;
+    }
+
+    .skill-discription {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .progress-bar {
+        margin-left: 60px;
+    }
+
+    .progress-bar h1 {
+        font-size: 26px;
+    }
+
+    .skill_bar p {
+        font-size: 16px;
         margin-bottom: 0;
     }
 }

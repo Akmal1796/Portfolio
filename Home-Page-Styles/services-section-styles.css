@@ -154,3 +154,47 @@
         margin-top: 30px;
     }
 }
+
+@media (max-width: 1400px) and (min-width: 750px) {
+
+    .services-discription {
+        margin-left: 40px;
+        margin-right: 70px;
+    }
+
+    .services-discription h1 {
+        font-size: 26px;
+    }
+    
+    .services-discription p {
+        font-size: 17px;
+    }
+    
+    .read-more-btn {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    .services {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .service-name {
+        width: 180px;
+        height: 260px;
+    }
+
+    .service-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .service-name h2 {
+        font-size: 17px;
+    }
+
+    .services-paragraph {
+        font-size: 14px;
+    }
+}
