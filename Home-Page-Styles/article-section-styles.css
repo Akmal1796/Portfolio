@@ -111,9 +111,46 @@
     
     .article-discription p {
         color: lightgray;
-        font-size: 18px;
+        font-size: 14px;
         width: 300px;
         text-align: center;
         margin-top: 0;
+    }
+
+    .article h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1400px) and (min-width: 750px) {
+
+    .article-discription {
+        text-align: center;
+    }
+    
+    .article-discription h1 {
+        font-size: 26px;
+    }
+    
+    .article-discription span {
+        color:  rgb(19, 196, 255);
+    }
+    
+    .article-discription p {
+        color: lightgray;
+        font-size: 18px;
+        width: 600px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .article {
+        margin-top: 20px;
+    }
+
+    .article h2 {
+        font-size: 22px;
     }
 }

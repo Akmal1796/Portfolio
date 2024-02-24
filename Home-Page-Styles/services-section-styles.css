@@ -74,6 +74,7 @@
 .service-name h2 {
     color:  rgb(77, 211, 255);
     margin: 0 0 8px 0;
+    text-align: center;
 }
 
 .services-paragraph {
@@ -143,7 +144,6 @@
 
     .service-name h2 {
         font-size: 14px;
-        text-align: center;
     }
 
     .services-paragraph {
@@ -183,6 +183,9 @@
     .service-name {
         width: 180px;
         height: 260px;
+        flex-direction: column;
+        overflow: scroll;
+        scrollbar-width: none;
     }
 
     .service-img {
