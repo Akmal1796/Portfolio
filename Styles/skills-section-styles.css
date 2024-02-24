@@ -25,10 +25,15 @@
 .skill-discription p {
     color: lightgray;
     font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .skill-discription {
     margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .skills_main{
