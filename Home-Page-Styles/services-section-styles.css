@@ -42,6 +42,7 @@
     background-color: transparent;
     color: black;
     display: flex;
+    background-image: linear-gradient(to left, rgb(3, 51, 67), rgb(0, 0, 0));
 } 
 
 .service-box {
@@ -51,7 +52,7 @@
 
 .service-name {
     width: 275px;
-    height: 275px;
+    height: 340px;
     background-color: transparent;
     color: lightgray;
     border: 1px solid rgb(0, 98, 131);
@@ -127,8 +128,8 @@
     }
 
     .service-name {
-        width: 140px;
-        height: 220px;
+        width: 170px;
+        height: 240px;
         margin-right: 0;
         margin-left: 20px;
         flex-direction: column;
@@ -182,10 +183,8 @@
 
     .service-name {
         width: 180px;
-        height: 260px;
+        height: 300px;
         flex-direction: column;
-        overflow: scroll;
-        scrollbar-width: none;
     }
 
     .service-img {
