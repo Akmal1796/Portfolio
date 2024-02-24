@@ -40,15 +40,6 @@
     font-size: 17px;
 }
 
-.skills-icons {
-    font-size: 40px;
-    text-align: center;
-}
-
-.skills-icons i {
-    margin-right: 6px;
-}
-
 .profissional-links {
     font-size: 40px;
     text-align: center;
@@ -228,14 +219,6 @@
     .about-discription {
         text-align: center;
         margin-left: 0;
-    }
-    
-    .skills-icons {
-        font-size: 20px;
-    }
-    
-    .skills-icons i {
-        margin-right: 10px;
     }
 
     .profissional-links {

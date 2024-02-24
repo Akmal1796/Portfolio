@@ -91,7 +91,72 @@
     height: 130px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 380px) {
+
+    .services-discription {
+        margin-top: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .services-discription h1 {
+        font-size: 22px;
+    }
+    
+    .service-span {
+        color:  rgb(19, 196, 255);
+    }
+    
+    .services-discription p {
+        color: lightgray;
+        font-size: 14px;
+    }
+    
+    .read-more-btn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+    
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }   
+    
+    .service-box {
+        display: flex;
+    }
+
+    .service-name {
+        width: 130px;
+        height: 200px;
+        margin-right: 0;
+        margin-left: 30px;
+        flex-direction: column;
+        overflow: scroll;
+        scrollbar-width: none;
+        padding-bottom: 10px;
+    }
+
+    .service-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-name h2 {
+        font-size: 12px;
+    }
+
+    .services-paragraph {
+        font-size: 10px;
+    }
+
+    .tier-two-service {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 750px) and (min-width: 380px) {
 
     .services-discription {
         margin-top: 25px;

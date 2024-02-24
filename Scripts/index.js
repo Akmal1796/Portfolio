@@ -48,6 +48,33 @@ function reveal() {
     }
 }
 
+
+    /**
+   * Animation on scroll
+   */
+    window.addEventListener('load', () => {
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        })
+      });
+
+  /**
+   * Easy event listener function
+   */
+  const on = (type, el, listener, all = false) => {
+    let selectEl = select(el, all)
+    if (selectEl) {
+      if (all) {
+        selectEl.forEach(e => e.addEventListener(type, listener))
+      } else {
+        selectEl.addEventListener(type, listener)
+      }
+    }
+  }
+
   /**
    * Easy selector helper function
    */
@@ -106,7 +133,7 @@ function reveal() {
 
                                                             /* hide/show projects */
 
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
     const hiddenProjects = document.querySelectorAll('.projects-preview .project');
     const seeMoreBtn = document.querySelector('.seemore-btn');
 
@@ -144,7 +171,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial setup to show the first 5 projects
     toggleProjects();
-});
+}); */
+
+  /**
+   * Porfolio isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let portfolioContainer = select('.projects-preview-container');
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: '.project-item'
+      });
+
+      let portfolioFilters = select('#portfolio-flters li', true);
+
+      on('click', '#portfolio-flters li', function(e) {
+        e.preventDefault();
+        portfolioFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        portfolioIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
+
+  });
 
                                                             /* Infinite slider for review messages */
 

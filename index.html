@@ -315,77 +315,84 @@
             <div class="project-discription reveal">
                 <h1>My <span>Latest</span> Projects</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima incidunt officiis quam, modi accusamus iste? Impedit eligendi quas provident fuga libero, soluta laborum tenetur dolore. Id assumenda excepturi nisi est.</p>
-                <div class="project-btn">
+<!--                 <div>
                     <button class="active-btn">All</button>
                     <button class="btn-title">Web Development</button>
                     <button class="btn-title">Fron-End</button>
                     <button class="btn-title">Back-End</button>
-                </div>
+                </div> -->
+            </div>
+            <div class="project-btn-container reveal">
+                <ul id="portfolio-flters" class="project-btn">
+                    <li data-filter="*" class="btn-title filter-active">All</li>
+                    <li data-filter=".filter-web" class="btn-title">Web Developement</li>
+                    <li data-filter=".filter-front" class="btn-title">Front-End</li>
+                    <li data-filter=".filter-Back" class="btn-title">Back-End</li>
+                  </ul>
             </div>
             <div class="projects-preview-container reveal">
                 <div class="projects-preview">
-                    <div class="project">
+                    <div class="project project-item filter-front">
                         <img src="Project-Thumbnails/amazon-project.png" class="project-img">
                         <div class="project-details">
                             <h2>Amazon Project</h2>
                             <p>This is amazon site clone</p>
                         </div>
                     </div>
-                    <div class="project">
+                    <div class="project project-item filter-web">
                         <img src="Project-Thumbnails/youtube-clone.png" class="project-img">
                         <div class="project-details">
                             <h2>YoutTube Project</h2>
                             <p>This is YouTube site clone</p>
                         </div>
                     </div>
-                    <div class="project">
+                    <div class="project project-item filter-front">
                         <img src="Project-Thumbnails/university-website.png" class="project-img">
                         <div class="project-details">
                             <h2>University Website Project</h2>
                             <p>This is oxford website clone</p>
                         </div>
                     </div>
-                    <div class="project">
+                    <div class="project project-item filter-Back">
                         <img src="Project-Thumbnails/taxi-project.png" class="project-img">
                         <div class="project-details">
                             <h2>Taxi Project</h2>
                             <p>This is taxi system</p>
                         </div>
                     </div>
-                    <div class="project hidden">
+                    <div class="project project-item filter-front">
                         <img src="Project-Thumbnails/rock-paper-csissors-game.png" class="project-img">
                         <div class="project-details">
                             <h2>Rock Paper Csissors Game</h2>
                             <p>This is rock-paper-csisoors game</p>
                         </div>
                     </div>
-                    <div class="project hidden">
+                    <div class="project project-item filter-web">
                         <img src="Project-Thumbnails/stopwatch.png" class="project-img">
                         <div class="project-details">
                             <h2>Stop Watch</h2>
                             <p>This is Stop watch</p>
                         </div>
                     </div>
-                    <div class="project hidden">
+                    <div class="project project-item filter-Back">
                         <img src="Project-Thumbnails/calculator.png" class="project-img">
                         <div class="project-details">
                             <h2>Calculator</h2>
                             <p>This is Calculator</p>
                         </div>
                     </div>
-                    <div class="project hidden">
+                    <div class="project project-item filter-web">
                         <img src="Project-Thumbnails/portfolio.png" class="project-img">
                         <div class="project-details">
                             <h2>Portfolio</h2>
                             <p>This is my portfolio work</p>
                         </div>
                     </div>
-                    <div class="project hidden">Text</div>
-                    <div class="project hidden">Text</div>
-                    <div class="project hidden">Text</div>
-                    <div class="project hidden">Text</div>
+                    <div class="project project-item filter-web">Text</div>
+                    <div class="project project-item filter-Back">Text</div>
+                    <div class="project project-item filter-Back">Text</div>
+                    <div class="project project-item filter-web">Text</div>
                 </div>
-                <button class="seemore-btn">See More</button>
             </div>
         </div>
 
@@ -582,5 +589,7 @@
     </section>
     
     <script src="Scripts/index.js"></script>
+    <script src="Scripts/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="Scripts/aos/aos.js"></script>
 </body>
 </html>

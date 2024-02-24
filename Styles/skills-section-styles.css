@@ -53,6 +53,17 @@
     align-items: center;
 }
 
+
+.skills-icons {
+    font-size: 40px;
+    text-align: center;
+}
+
+.skills-icons i {
+    margin-right: 6px;
+}
+
+
 .percent {
     margin-left: 10px;
 }
@@ -200,6 +211,15 @@
         font-size: 13px;
         margin-bottom: 0;
     }
+    
+    .skills-icons {
+        font-size: 20px;
+    }
+    
+    .skills-icons i {
+        margin-right: 10px;
+        margin-left: 8px;
+    }
 }
 
 @media (max-width: 1400px) and (min-width: 750px) {
@@ -244,5 +264,14 @@
     .skill_bar p {
         font-size: 16px;
         margin-bottom: 0;
+    }
+
+    .skills-icons {
+        font-size: 20px;
+    }
+    
+    .skills-icons i {
+        margin-right: 16px;
+        margin-left: 14px;
     }
 }
