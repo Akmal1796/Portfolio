@@ -522,7 +522,7 @@
                 <div class="left-footer-section">
                     <div class="footer-discription">
                         <img src="Logo/logo.png" class="footer-logo">
-                        <p>Explore my latest projects, insightful articles, and client reviews to witness the journey of an intermediate web developer. Connect with me on social media for real-time updates and stay informed about the ever-evolving world of web development. For inquiries and collaborations, reach out via email or the provided contact form. Let's create something extraordinary together!</p>
+                        <p>Explore my latest projects, insightful articles, and client reviews to witness the journey of an intermediate web developer. Connect with me on social media for real-time updates and stay informed about the ever-evolving world of web development.</p>
                     </div>
                     <h3>Address</h3>
                     <p class="address-paragraph"> No.01, St Name,<br>
@@ -553,28 +553,27 @@
                     <h3>Categories</h3>
                     <div class="category-container">
                         <ul>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Contact Me</a></li>
-                            <li><a href="#">My Blog</a></li>
-                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#contact-form">Contact Me</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">My Projects</a></li>
-                            <li><a href="#">My Articles</a></li>
-                            <li><a href="#">Achievments</a></li>
-                            <li><a href="#">My Services</a></li>
+                            <li><a href="#projects">My Projects</a></li>
+                            <li><a href="#articles">My Articles</a></li>
+                            <li><a href="#service">My Services</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="right-footer-section">
                     <h3>Contact Me</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dicta maiores nesciunt veritatis velit.</p>
-                    <form class="newsletter-form" id="contact-form">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                        <textarea rows="5" cols="30" placeholder="Enter Your Message"></textarea>
+                    <p> For inquiries and collaborations, reach out via email or the provided contact form. Let's create something extraordinary together!</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="newsletter-form" id="contact-form">
+                        <input type="hidden" name="access_key" value="02ce8023-c44f-45a1-9c3d-5a9bdd44b003">
+                        <input type="text" name="name" placeholder="Your Name" class="name">
+                        <input type="email" name="email" placeholder="Your Email" class="email">
+                        <textarea name="message" rows="5" cols="30" placeholder="Enter Your Message" class="message"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
                     </form>
-                    <button class="submit-btn">Submit</button>
                 </div>
             </div>
 
