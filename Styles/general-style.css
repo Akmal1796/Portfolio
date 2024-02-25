@@ -30,11 +30,6 @@ body {
 # Back to top button
 --------------------------------------------------------------*/
 
-.backtop-btn {
-    background-color: rgb(68, 255, 68);
-    z-index: 9998;
-}
-
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -51,15 +46,11 @@ body {
   .back-to-top i {
     font-size: 28px;
     color: #fff;
+    background-color: transparent;
     line-height: 0;
   }
-/*   
-  .back-to-top:hover {
-    background: #7ddeff;
-    color: #000000;
-  } */
   
-  .back-to-top.active {
+  .backtop-btn a.active {
     visibility: visible;
     opacity: 1;
   }

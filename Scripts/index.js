@@ -19,13 +19,34 @@
 
 const sidebar = document.querySelector('.sidebar');
 
-function showSidebar() {
-    sidebar.style.display = 'flex';
+function showSidebar(event) {
+  event.preventDefault(); // Prevents the default behavior of the anchor tag
+  sidebar.style.display = 'flex';
 }
 
-function hideSidebar() {
-    sidebar.style.display = 'none';
+function hideSidebar(event, targetId) {
+  if (event) {
+      event.preventDefault(); // Prevents the default behavior of the anchor tag
+  }
+  sidebar.style.display = 'none';
+
+  // Scroll to the clicked section if targetId is provided
+  if (targetId) {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+  }
 }
+
+// Add event listeners to the navigation links
+const navLinks = document.querySelectorAll('.navlinks');
+navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        const targetId = link.getAttribute('href').substring(1); // Get the target section ID
+        hideSidebar(event, targetId);
+    });
+});
 
                                                             /* Reveal Elements on Scroll */
 
