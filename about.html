@@ -18,20 +18,25 @@
     <nav class="nav" id="navbar">        
         <ul class="sidebar">
             <li onclick="hideSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li onclick="hideSidebar()"><a href="index.html" class="navlinks scrollto">Home</a></li>
             <li onclick="hideSidebar()"><a href="#about" class="navlinks scrollto">About Me</a></li>
+            <li onclick="hideSidebar()"><a href="#contact-form" class="contact-btn">Contact Me</a></li>
         </ul>
         <div>
             <img src="Logo/logo.png" class="logo">
         </div>
         <ul class="middle-section">
-            <li><a href="index.html" class="navlinks hideOnMObile scrollto">Home</a></li>
             <li><a href="#about" class="navlinks hideOnMObile scrollto">About Me</a></li>
+            <li><a href="#contact-form" class="contact-btn hideOnMObile">Contact Me</a></li>
             <li class="menue-btn" onclick="showSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
 
     <section class="main-section">
+
+        <div class="back-btn">
+            <a href="index.html"><i class="fa-solid fa-circle-left"></i></a>
+        </div>
+
         <div id="about" class="about-page-section">   
             <div class="skill-section">
                 <div class="skill-discription">
@@ -237,14 +242,14 @@
                     <h3>Categories</h3>
                     <div class="category-container">
                         <ul>
-                            <li><a href="#about">About Me</a></li>
+                            <li><a href="/#about">About Me</a></li>
                             <li><a href="#contact-form">Contact Me</a></li>
-                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="/#reviews">Reviews</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#projects">My Projects</a></li>
-                            <li><a href="#articles">My Articles</a></li>
-                            <li><a href="#service">My Services</a></li>
+                            <li><a href="/#projects">My Projects</a></li>
+                            <li><a href="/#articles">My Articles</a></li>
+                            <li><a href="/#service">My Services</a></li>
                         </ul>
                     </div>
                 </div>

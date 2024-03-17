@@ -6,6 +6,22 @@
     z-index: 999;
 }
 
+.back-btn {
+    position: fixed;
+    top: 100px;
+    left: 15px;
+    z-index: 99999;
+}
+
+.back-btn i {
+    font-size: 30px;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: white;
+}
+
 .about-page-section {
     margin-top: 30px;
 }
