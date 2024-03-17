@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+                                <!-- page styles -->
+    <link rel="stylesheet" href="Styles/general-style.css">
+    <link rel="stylesheet" href="Styles/about.css">
+    <link rel="stylesheet" href="Styles/nav-styles.css">
+    <link rel="stylesheet" href="Styles/skills-section-styles.css">
+    <link rel="stylesheet" href="Styles/footer-section-styles.css">
+                                <!-- icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="nav" id="navbar">        
+        <ul class="sidebar">
+            <li onclick="hideSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick="hideSidebar()"><a href="index.html" class="navlinks scrollto">Home</a></li>
+            <li onclick="hideSidebar()"><a href="#about" class="navlinks scrollto">About Me</a></li>
+        </ul>
+        <div>
+            <img src="Logo/logo.png" class="logo">
+        </div>
+        <ul class="middle-section">
+            <li><a href="index.html" class="navlinks hideOnMObile scrollto">Home</a></li>
+            <li><a href="#about" class="navlinks hideOnMObile scrollto">About Me</a></li>
+            <li class="menue-btn" onclick="showSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <div id="about" class="about-page-section">   
+            <div class="skill-section">
+                <div class="skill-discription">
+                    <h1>My Education</h1>
+                    <h2>Bachelor of Science Honours in Computer Science</h2>
+                    <h3>Saegis Campus, Nugegoda, Colombo</h3>
+                    <h3>Expected Graduation: October 2026</h3>
+                    <p>I am a second-year Computer Science student at Saegis Campus, progressing towards a Bachelor's degree with an expected graduation in October 2026. My academic journey has equipped me with a strong foundation in computer science principles, programming languages, and problem-solving. I have applied this knowledge in various projects, focusing on Machine Learnig.</p>
+
+                    <p>In addition to my academic pursuits, I have also been actively freelancing in the field of Web-Development. This experience has not only allowed me to apply theoretical concepts to practical scenarios but has also honed my ability to work independently, manage projects, and deliver high-quality solutions.</p>
+
+                    <p>Outside the classroom, I am committed to continuous learning and professional growth. Eager to contribute my skills and passion to real-world applications, I am excited about the opportunities that lie ahead in the field of computer science.</p>
+                </div>
+                <div class="progress-bar">
+                    <h1>My Skills</h1>
+    
+                    <div class="skills_main">
+    
+                        <div class="skill_bar">
+                            <div class="info">
+                                <p>HTML <span class="skills-icons">
+                                    <i class="fa-brands fa-html5" style="color: rgb(255, 99, 32);"></i>
+                                </span></p>
+                            </div>
+                            <div class="bar">
+                                <span class="html"></span>
+                            </div>
+                            <P class="percent">90%</P>
+                        </div>
+            
+                        <div class="skill_bar">
+                            <div class="info">
+                                <p>CSS <span class="skills-icons">
+                                    <i class="fa-brands fa-css3-alt" style="color: #005eff;"></i>
+                                </span></p>
+                            </div>
+                            <div class="bar">
+                                <span class="css"></span>
+                            </div>
+                            <P class="percent">85%</P>
+                        </div>
+            
+                        <div class="skill_bar">
+                            <div class="info">
+                                <p>Java Script <span class="skills-icons">
+                                    <i class="fa-brands fa-js" style="color: #d6e600;"></i>
+                                </span></p>
+                            </div>
+                            <div class="bar">
+                                <span class="js"></span>
+                            </div>
+                            <P class="percent">80%</P>
+                        </div>
+            
+                        <div class="skill_bar">
+                            <div class="info">
+                                <p>React js <span class="skills-icons">
+                                    <i class="fa-brands fa-react" style="color: #74C0FC;"></i>
+                                </span></p>
+                            </div>
+            
+                            <div class="bar">
+                                <span class="react"></span>
+                            </div>
+                            <P class="percent">25%</P>
+                        </div>
+            
+                        <div class="skill_bar">
+                            <div class="info">
+                                <p>Mongo DB <span class="skills-icons">
+                                    <i class="fa-solid fa-database" style="color: #18c615;"></i>
+                                </span></p>
+                            </div>
+                            <div class="bar">
+                                <span class="mongo"></span>
+                            </div>
+                            <P class="percent">40%</P>
+                        </div>
+    
+                        <div class="skill_bar">
+                            <div class="info">
+                                <p>PHP <span class="skills-icons">
+                                    <i class="fa-brands fa-php" style="color: #8d72df;"></i>
+                                </span></p>
+                            </div>
+                            <div class="bar">
+                                <span class="php"></span>
+                            </div>
+                            <P class="percent">60%</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="goal-container" id="goal">
+                <div class="main">
+                    <h1>My Goals</h1>
+                    <div class="container">
+                        <ul>
+                            <li class="reveal">
+                                <h3 class="title">Foundation & Basics</h3>
+                                <p class="goal-discription">Establish a strong groundwork in web development with proficiency in HTML, CSS, and introductory JavaScript.</p>
+                                <a href="#">Read More</a>
+                                <span class="circle"></span>
+                                <span class="date">December 2023</span>
+                            </li>
+            
+                            <li class="reveal">
+                                <h3 class="title">Intro to ML with Web Apps</h3>
+                                <p class="goal-discription">Develop a basic web application incorporating fundamental machine learning functionalities using Python. Introduce Node.js for server-side scripting.</p>
+                                <a href="#">Read More</a>
+                                <span class="circle"></span>
+                                <span class="date">February 2024</span>
+                            </li>
+            
+                            <li class="reveal">
+                                <h3 class="title">Data Handling with Web Tech</h3>
+                                <p class="goal-discription">Showcase the ability to manipulate and display data using web-based tools and APIs, emphasizing seamless integration with web development. Utilize JavaScript for web-based data manipulation. Introduce Express.js for server-side development.</p>
+                                <a href="#">Read More</a>
+                                <span class="circle"></span>
+                                <span class="date">May 2024</span>
+                            </li>
+            
+                            <li class="reveal">
+                                <h3 class="title">Web Algorithms & Interactivity</h3>
+                                <p class="goal-discription">Implement machine learning algorithms within interactive web applications, demonstrating dynamic and engaging user experiences. Use Python for machine learning algorithms and JavaScript (React.js) for building dynamic user interfaces.</p>
+                                <a href="#">Read More</a>
+                                <span class="circle"></span>
+                                <span class="date">August 2024</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="reveal">
+                                <h3 class="title">Web Dev for ML Insights</h3>
+                                <p class="goal-discription">Elevate your portfolio with a web-based dashboard or visualization tool designed to present machine learning insights effectively. Develop using JavaScript (React.js) for dynamic interfaces.</p>
+                                <a href="#">Read More</a>
+                                <span class="circle"></span>
+                                <span class="date">November 2024</span>
+                            </li>
+            
+                            <li class="reveal">
+                                <h3 class="title">Optimizing Web Apps with ML</h3>
+                                <p class="goal-discription">Feature a project where machine learning optimizes a web application, showcasing improved user experience through strategic integration. Leverage Python for machine learning optimization integrated into web applications. Continue using JavaScript (Node.js and Express.js) for server-side scripting.</p>
+                                <a href="#">Read More</a>
+                                <span class="circle"></span>
+                                <span class="date">January 2025</span>
+                            </li>
+            
+                            <li class="reveal">
+                                <h3 class="title">Real-world Web Dev Apps</h3>
+                                <p class="goal-discription">Showcase comprehensive skills by integrating advanced machine learning functionalities into real-world web development scenarios. Utilize Python, JavaScript (React.js, Node.js, Express.js) for advanced machine learning integration and full-stack web development.</p>
+                                <a href="#">Read More</a>
+                                <span class="circle"></span>
+                                <span class="date">March 2025</span>
+                            </li>
+            
+                            <li class="reveal">
+                                <h3 class="title">Continuous Learning</h3>
+                                <p class="goal-discription">Maintain an updated portfolio section reflecting continuous learning, ongoing projects, and dual specialization in both web development and machine learning. Continue proficiency in HTML, CSS, JavaScript (React.js), Node.js, Express.js, and Python, exploring additional languages as needed for continuous growth and specialization.</p>
+                                <a href="#">Read More</a>
+                                <span class="circle"></span>
+                                <span class="date">June 2025</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section reveal">
+            <div class="footer-content">
+                <div class="left-footer-section">
+                    <div class="footer-discription">
+                        <img src="Logo/logo.png" class="footer-logo">
+                        <p>Explore my latest projects, insightful articles, and client reviews to witness the journey of an intermediate web developer. Connect with me on social media for real-time updates and stay informed about the ever-evolving world of web development.</p>
+                    </div>
+                    <h3>Address</h3>
+                    <p class="address-paragraph"> No.01, St Name,<br>
+                        City</p>
+                    <div class="social-media-links">
+                        <div>
+                            <h4>Follow Me On</h4>
+                            <a href="https://x.com/Akmal_official_?t=jVZTUPqgKStUu-fO6PsTkQ&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/mhd_akmal_17?utm_source=qr&igsh=emYxdTJneWZrMXBj" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/mohamad.akmal.1614?sfnsn=wa&mibextid=RUbZ1f" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.threads.net/@mhd_akmal_17" target="_blank"><i class="fa-brands fa-threads"></i><br></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                            <a href="https://telegram.org/dl" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://discord.com/invite/PfvfJvbV" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        </div>
+                        <div>
+                            <h4>To Know More</h4>
+                            <a href="https://youtube.com/@programmingacademy4699?feature=shared" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://stackoverflow.com/users/20191382/mohamed-akmal" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                            <a href="https://github.com/Akmal1796" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mohamed-akmal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.upwork.com/workwith/mohameda1339" target="_blank"><i class="fa-brands fa-upwork"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-footer-section">
+                    <h3>Categories</h3>
+                    <div class="category-container">
+                        <ul>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#contact-form">Contact Me</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#projects">My Projects</a></li>
+                            <li><a href="#articles">My Articles</a></li>
+                            <li><a href="#service">My Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-footer-section">
+                    <h3>Contact Me</h3>
+                    <p> For inquiries and collaborations, reach out via email or the provided contact form. Let's create something extraordinary together!</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="newsletter-form" id="contact-form">
+                        <input type="hidden" name="access_key" value="02ce8023-c44f-45a1-9c3d-5a9bdd44b003">
+                        <input type="text" name="name" placeholder="Your Name" class="name">
+                        <input type="email" name="email" placeholder="Your Email" class="email">
+                        <textarea name="message" rows="5" cols="30" placeholder="Enter Your Message" class="message"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <p class="copyright-section">
+                    2024 &copy All rights reserved - Mohamed Akmal
+                </p>
+            </div>
+        </div>
+
+        <div class="backtop-btn">
+            <a href="#" class="back-to-top"><i class="fa-solid fa-circle-up"></i></a>
+        </div>
+
+    </section>
+    
+    <script src="Scripts/index.js"></script>
+    <script src="Scripts/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="Scripts/aos/aos.js"></script>
+</body>
+</html>

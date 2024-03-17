@@ -130,6 +130,10 @@
     transition: opacity 0.5s;
 }
 
+.project-details .short-discription {
+    width: 75%;
+}
+
 .project-details button {
     color: rgb(255, 255, 255);
     background-color: rgb(18, 130, 204);
